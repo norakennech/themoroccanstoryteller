@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="soundDesign.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet"></head>
+<header>The Moroccan storyteller</header>
+<body>
+  <h1>
+     <p>Story</p>
+    <input type="range" min="0" max="1000" value="1" step="any" id="Conversation">
+    <span id="Story"></span>
+
+    <p>  Athan </p>
+    <input type="range" min="0" max="1000" value="1" step="any" id="Cars">
+    <span id="Athan"></span>
+
+    <p>  Crowd</p>
+    <input type="range" min="0" max="1000" value="1" step="any" id="Horse">
+    <span id="Crowd"></span>
+
+    <p>  Tree leaves</p>
+    <input type="range" min="0" max="1000" value="1" step="any" id="Guitar">
+    <span id="Leaves"></span>
+
+    <p>  Cicada</p>
+    <input type="range" min="0" max="1000" value="1" step="any" id="Guitar">
+    <span id="Cicada"></span>
+    <br>
+    <br>
+
+
+    <script src="recorder.js"></script>
+    <input type="button" value="record" id="StartButton">
+    <input type="button" value="stop" id="StopButton">
+    <div id="recordings"></div>
+    <script>
+    //SET UP INTERFACE
+      var StartStop = document.getElementById("StartButton");
+      var Decay = document.getElementById("Decay");
+      var DecayLabel = document.getElementById("Decay label");
+      var Delay = document.getElementById("Delay");
+      var DelayLabel = document.getElementById("Delay label");
+      var Width = document.getElementById("Width");
+      var WidthLabel = document.getElementById("Width label");
+      var Freq = document.getElementById("Freq");
+      var FreqLabel = document.getElementById("Freq label");
+      var Source = document.getElementById("Source");
+      var Play = document.getElementById("PlayButton");
+      var Start = document.getElementById("StartButton");
+      var Stop = document.getElementById("StopButton");
+    </script>
+    <script src="PluckedString.js"></script>
+</body>
+</html>
